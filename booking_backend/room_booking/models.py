@@ -53,4 +53,3 @@ class User(AbstractUser):
     full_name = models.CharField(max_length=100, default="")
 
 
-    settings.AUTH_USER_MODEL
