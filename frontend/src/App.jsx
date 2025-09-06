@@ -5,6 +5,7 @@ import './App.css'
 import Navbar from './components/Navbar'
 import { Outlet } from 'react-router-dom'
 import { UserContext } from './components/UserContext'
+import TextType from './components/TextType'
 
 function App() {
 
@@ -30,6 +31,16 @@ function App() {
   return(
     <>
     <Navbar></Navbar>
+    <button>
+
+    <TextType 
+  text={["Text typing effect", "for your websites", "Happy coding!"]}
+  typingSpeed={75}
+  pauseDuration={1500}
+  showCursor={true}
+  cursorCharacter="|"
+  />
+  </button>
     <Outlet></Outlet>
     
     </>
